@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { IMAGE_URL } from '../lib/constants';
+import { withGrid } from '@pantheon-systems/nextjs-kit';
 
 const GradientPlaceholder = () => (
 	<div className="w-full h-full bg-gradient-to-b from-blue-100 to-blue-500" />
@@ -40,3 +41,5 @@ export const ArticleGridItem = ({
 		</Link>
 	);
 };
+
+export const ArticleGrid = withGrid(ArticleGridItem);
