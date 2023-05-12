@@ -20,7 +20,7 @@
 		"coverage": "vitest run --coverage"
 	},
 	"dependencies": {
-		"@pantheon-systems/drupal-kit": "4.5.0-canary.0",
+		"@pantheon-systems/drupal-kit": "4.6.0-canary.0",
 		"@pantheon-systems/nextjs-kit": "1.7.2",
 		"@tailwindcss/typography": "^0.5.7",
 		"dotenv": "^16.0.2",
@@ -32,7 +32,7 @@
 	},
 	"devDependencies": {
 		"autoprefixer": "^10.4.12",
-		"postcss": "^8.4.16",
+		"postcss": "^8.4.21",
 		"tailwindcss": "^3.1.8",
 		"@testing-library/react": "13.4.0",
 		"@vitejs/plugin-react": "^3.0.1",
