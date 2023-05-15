@@ -33,7 +33,7 @@
 	"devDependencies": {
 		"autoprefixer": "^10.4.12",
 		"postcss": "^8.4.21",
-		"tailwindcss": "^3.1.8",
+		"tailwindcss": "^3.3.2",
 		"@testing-library/react": "13.4.0",
 		"@vitejs/plugin-react": "^3.0.1",
 		"c8": "^7.12.0",
