@@ -7,6 +7,7 @@ import { IMAGE_URL } from '../lib/constants';
 import Link from 'next/link';
 import Layout from '../components/layout';
 import { ContentWithImage } from '@pantheon-systems/nextjs-kit';
+import styles from './catch-all.module.css';
 
 export default function CatchAllRoute({
 	pageData,
@@ -20,20 +21,18 @@ export default function CatchAllRoute({
 				title,
 				body: { processed },
 			} = pageData;
-			return (
-				<>
-					<article className="prose lg:prose-xl mt-10 mx-auto">
-						<h1>{title}</h1>
-						<Link passHref href="/pages" className="font-normal">
-							Pages &rarr;
-						</Link>
-							<div
-								className="mt-12 max-w-lg mx-auto lg:max-w-screen-lg"
-								dangerouslySetInnerHTML={{ __html: processed }}
-							/>
-					</article>
-				</>
-			);
+			return <>
+                <article className={`${styles.container} flex flex-col max-w-screen-md`}>
+                    <h1>{title}</h1>
+                    <Link passHref href="/pages">
+                        Pages &rarr;
+                    </Link>
+                        <div 
+                            className={`${styles.content} text-gray-700 mt-12`}
+                            dangerouslySetInnerHTML={{ __html: processed }}
+                        />
+                </article>
+            </>;
 		}
 
 		if (pageData?.type === 'node--article') {
