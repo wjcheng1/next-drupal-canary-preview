@@ -1,23 +1,26 @@
-	.container {
-		margin: 2.5rem auto 0;
-	}
+.container {
+	margin: 2.5rem auto 0;
+}
 
-	.container > h1 {
-		@apply font-extrabold mb-12;
-		font-size: 3.5rem;
-	}
+.containerTitle {
+	font-size: 3.5rem;
+}
 
-	.container >  h1 + a {
-		@apply underline;
-		font-size: 1.25rem;
-	}
+.container >  h1 + a {
+	@apply underline;
+	font-size: 1.25rem;
+}
 
-	.content > * > a {
-		@apply font-medium underline;
-	}
+.content > * > a {
+	@apply font-medium underline;
+}
 
-	.content > p {
-		@apply mb-4;
-		font-size: 1.25rem;
-	}
+.content > p {
+	@apply mb-4;
+	font-size: 1.25rem;
+}
+
+.noContent {
+	font-size: 1.5rem;
+}
 
