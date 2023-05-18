@@ -15,13 +15,14 @@
 		"build:mono": "next build",
 		"start:mono": "next start",
 		"lint": "next lint",
+		"lint:fix": "next lint --fix",
 		"test": "vitest run",
 		"update-snapshots": "vitest run --update --silent",
 		"coverage": "vitest run --coverage"
 	},
 	"dependencies": {
-		"@pantheon-systems/drupal-kit": "4.6.0-canary.0",
-		"@pantheon-systems/nextjs-kit": "1.7.2",
+		"@pantheon-systems/drupal-kit": "4.6.0-canary.1",
+		"@pantheon-systems/nextjs-kit": "1.7.3-canary.0",
 		"@tailwindcss/typography": "^0.5.7",
 		"dotenv": "^16.0.2",
 		"next": "^13.1.5",
