@@ -22,7 +22,7 @@
 	},
 	"dependencies": {
 		"@pantheon-systems/drupal-kit": "4.6.0-canary.1",
-		"@pantheon-systems/nextjs-kit": "1.7.3-canary.0",
+		"@pantheon-systems/nextjs-kit": "1.7.3-canary.1",
 		"@tailwindcss/typography": "^0.5.7",
 		"dotenv": "^16.0.2",
 		"next": "^13.1.5",
