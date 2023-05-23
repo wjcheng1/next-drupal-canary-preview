@@ -21,18 +21,24 @@ export default function CatchAllRoute({
 				title,
 				body: { processed },
 			} = pageData;
-			return <>
-                <article className={`${styles.container} flex flex-col max-w-screen-md`}>
-                    <h1 className={`${styles.containerTitle} font-extrabold mb-12`}>{title}</h1>
-                    <Link passHref href="/pages">
-                        Pages &rarr;
-                    </Link>
-                        <div 
-                            className='text-gray-700 mt-12'
-                            dangerouslySetInnerHTML={{ __html: processed }}
-                        />
-                </article>
-            </>;
+			return (
+				<>
+					<article
+						className={`${styles.container} flex flex-col max-w-screen-md`}
+					>
+						<h1 className={`${styles.containerTitle} font-extrabold mb-12`}>
+							{title}
+						</h1>
+						<Link passHref href="/pages">
+							Pages &rarr;
+						</Link>
+						<div
+							className="text-gray-700 mt-12"
+							dangerouslySetInnerHTML={{ __html: processed }}
+						/>
+					</article>
+				</>
+			);
 		}
 
 		if (pageData?.type === 'node--article') {
@@ -53,16 +59,20 @@ export default function CatchAllRoute({
 							? {
 									src: IMAGE_URL + imgSrc,
 									alt: thumbnail?.resourceIdObjMeta?.alt,
-								}
+							  }
 							: undefined
 					}
 				/>
 			);
 		}
 
-		return <>
-            <h2 className={`${styles.noContent} mt-14 text-center`}>No content found 🏜</h2>
-        </>;
+		return (
+			<>
+				<h2 className={`${styles.noContent} mt-14 text-center`}>
+					No content found 🏜
+				</h2>
+			</>
+		);
 	};
 	return (
 		<Layout preview={preview} footerMenu={footerMenu}>

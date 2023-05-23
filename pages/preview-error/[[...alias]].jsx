@@ -13,7 +13,7 @@ export default function PreviewError({ footerMenu, preview }) {
 		query: { error, message },
 	} = useRouter();
 	return (
-        <Layout footerMenu={footerMenu} preview={true}>
+		<Layout footerMenu={footerMenu} preview={true}>
 			<div className={`${styles.container} flex flex-col mb-0 mx-auto mt-20`}>
 				<h2>🛑 {error ? error : 'There was an error on the server'} 🛑</h2>
 				{message ? <p>{message}</p> : null}
@@ -22,7 +22,7 @@ export default function PreviewError({ footerMenu, preview }) {
 				</Link>
 			</div>
 		</Layout>
-    );
+	);
 }
 
 export async function getServerSideProps(context) {
