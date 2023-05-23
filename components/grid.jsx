@@ -23,7 +23,7 @@ export const ArticleGridItem = ({
 			}`}
 		>
 			<div className={`${styles.card} rounded-lg cursor-pointer h-full overflow-x-hidden`}>
-				<div className={`${styles.cardImg} shrink-0 h-40 relative`}>
+				<div className='shrink-0 h-40 relative'>
 					{imgSrc !== '' ? (
 						<Image
 							src={IMAGE_URL + imgSrc}

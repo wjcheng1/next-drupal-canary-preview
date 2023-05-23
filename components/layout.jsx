@@ -18,9 +18,9 @@ export default function Layout({ children, footerMenu, preview = false }) {
         <div className={`${styles.layout} flex flex-col`}>
 			{preview && <PreviewRibbon />}
 			<Header navItems={navItems} />
-			<main className={`${styles.layoutMain} mb-auto`}>{children}</main>
+			<main className='mb-auto'>{children}</main>
 			<Footer footerMenuItems={footerMenuItems}>
-				<span className={`${styles.footerCopy} my-0 mx-auto`}>
+				<span className='my-0 mx-auto'>
 					© {new Date().getFullYear()} Built with{' '}
 					<a
 						href="https://nextjs.org/"

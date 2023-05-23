@@ -41,7 +41,7 @@ export default function PageListTemplate({
 									href={`${
 										multiLanguage ? `/${path?.langcode || locale}` : ''
 									}${path.alias}`}
-									className={`${styles.link} underline`}
+									className='underline'
 								>
 									Read more →
 								</Link>
